@@ -2,10 +2,220 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bb79120a2d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>hello</h1>
+     <div id="header">
+         <div class="container">
+            <nav>
+                <img src= "logo1-removebg-preview.png" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Full Stack Developer | Fresher</p>
+                <h1> Hi,I'm <span>Akshaya <br>Madde</span>&nbsp;from india</h1>
+                <img src="laptop_gril-removebg-preview.png" class="abtimg">
+            </div>
+         </div>
+     </div>
+<!--------------------- about-------------------->
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="proffesionalgirl-removebg-preview.png"  class="Aboutimg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                     Hello, I'm Akshaya, a passionate and dedicated graduate in Bachelor's of Computer Science from Kakatiya University in 2022. 
+                     Since my graduation, I have been on an exciting journey to enhance my skills in the world of software development.
+                     I've honed my expertise in Java programming, covering core Java,J2EE, Java libraries, Hibernate, Spring, and Spring in Jspiders.
+                     Alongside that, I've delved into web development with proficiency in JavaScript, HTML, CSS, and Oracle SQL, creating innovative web applications.
+                     I've translated this knowledge into action by independently developing a range of projects. Currently,
+                     I am gaining practical experience as a web developer intern at Gauravgo Games Technologies Private Limited and Bharat, where I'm actively contributing as a full stack Web developer intern.
+                     My portfolio is a testament to my relentless pursuit of excellence in the ever-evolving tech landscape. 
+                    I am eager to leverage my skills, determination, and the opportunities to learn and grow in a dynamic team while striving for impactful contributions in the field of full stack development.
+                </p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>&nbsp;&nbsp;Java(Java Programming,Core Java,Java Library,J2EE)</li>
+                        <li><span>Frameworks</span><br>&nbsp;&nbsp;Spring<br>&nbsp;&nbsp;Hibernate<br>&nbsp;&nbsp;Spring Boot</li>
+                        <li><span>Technologies</span><br>&nbsp;&nbsp;HTML<br>&nbsp;&nbsp;CSS<br>&nbsp;&nbsp;SQL</li>
+                        <li><span>Tools</span><br>&nbsp;&nbsp;GitHub<br>&nbsp;&nbsp;Eclipse<br>&nbsp;&nbsp;Visual Studio</li>
+
+                    </ul>
+                   </div>
+
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Bachelor's Degree From Kakatiya University in Hanamkonda</li>
+                        <li><span>2019</span><br>Intermediate From Kaloji Junior College in Hanamkonda</li>
+                        <li><span>2017</span><br>SSC From Z.P.H.S girl's Damera in Damera</li>
+                    </ul>
+                   </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <!---------------------Projects----------->
+       <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                
+              <div class>
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <i class="fa-solid fa-temperature-low"></i>
+                <h2>Temperature Converter</h2>
+                <p>The complete temperature converter allows you to easily convert between Fahrenheit,
+                     Celsius, and Kelvin temperatures with precision.
+                    </p>
+                   
+                      
+              </div>
+
+              <div>
+                <i class="fa-solid fa-crop-simple"></i>
+               
+                <h1>Content Management Tool</h1>
+                <br>
+                <p>
+                    Created an interactive blog using HTML, CSS, and JavaScript, incorporating text, images, 
+                    and videos to enhance user engagement. Implemented these elements seamlessly for a visually 
+                    appealing user experience.
+ 
+                </p>
+
+                   
+              </div>
+              <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Game Project</h2>
+                <p>Implemented engaging gameplay elements including RocketsStars, Opponents, and Bullets, meticulously
+                     adjusting sizes and animations for a polished look. Developed a scoring system that rewards players for destroying opponents 
+                    and seamlessly transitions the game to the next level upon victory.</p>
+                    
+                    
+              </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+       <!----------------portfolio------->
+       <div id="portfolio">
+           <div class="container">
+            <h1 class="sub-title">My Work</h1>
+             <div class="work-list">
+                <div class="work">
+                    <img src="coding.jpg" class="cod">
+                    <div class="layer">
+                        <h3>Coding App</h3>
+                        <p>I'm improving my coding skills with this app, taking on coding challenges and competing on platforms like HackerRank and LeetCode. 
+                            Find it on the Play Store to start your coding journey.
+                        </p>
+                        <a href="https://www.hackerrank.com/contests/archived"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Social media.jpg" class="cod">
+                    <div class="layer">
+                        <h3>Social Media Apps</h3>
+                        <p>This app Connects you to the talented peoples around the world 
+                            Download if from play Store.
+                        </p>
+                        <a href="https://play.google.com/store/games?hl=en&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="music.avif"  class="cod">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p> 
+                            Elevate mental clarity and liberate your mind through music. 
+                            Unlock this experience on the Play Store for a refreshing boost.
+                        </p>
+                        <a href="https://play.google.com/store/search?q=spotify&c=apps&hl=en&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+             </div>
+
+<!-- 
+             <a href="#" class="btn">See more</a> -->
+           </div>
+       </div>
+
+       <!----------------Contact------------------->
+       
+         <div id="contact">
+
+            <div class="container">
+                <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>akshayamadde@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-flip"></i>+91-8341433624</p>
+
+                    <div class="social-icons">
+                        <a href="https://twitter.com/AkshayaMadde"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/akshaya-madde-7464b7228"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/in/akshaya_.01"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/AkshayaMadde?tab=overview&from=2023-09-01&to=2023-09-30"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1KbuVNqsmDLYNUz-_NufxVHPFffTUZp5T/view?usp=drivesdk" download class="btn btn2">Resume</a>
+                </div>
+ 
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+         </div>
+         
+         <div class="copyright">
+         <p>CopyRight &copy; Akshaya Madde &nbsp;<i class="fa-solid fa-heart"></i></p>
+      </div>
+         
+        </div>
+        
+        <script src="script.js"></script>
+
+
+    
+   
 </body>
 </html>
